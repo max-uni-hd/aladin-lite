@@ -4,6 +4,7 @@
 
     <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
     <script type="text/javascript" src="./../dist/aladin.umd.cjs" charset="utf-8"></script>
+    <script defer src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
 
 </head>
 
@@ -46,6 +47,17 @@
         }
     });
 </script>
+<div id="gd"></div>
+
+    <script>
+        setTimeout(() => {
+
+            Plotly.newPlot("gd", /* JSON object */ {
+                "data": [{ "y": [1, 2, 3] }],
+                "layout": { "width": 600, "height": 400}
+            })
+        }, 1000)
+    </script>
 
 </body>
 </html>

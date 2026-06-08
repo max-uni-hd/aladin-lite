@@ -134,6 +134,6 @@ import { Utils } from "../../Utils";
             tooltip: {content: 'You can share/export your view into many ways', position: {direction: 'top'}},
         }, aladin);
 
-        self = this;
+        self = this; //here
     }
 }
